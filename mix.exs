@@ -40,7 +40,8 @@ defmodule Jabberwocky.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:ecto_enum, "~> 1.0"},
-      {:faker, "~> 0.9"}
+      {:faker, "~> 0.9"},
+      {:bamboo, "~> 0.8"}
     ]
   end
 
