@@ -39,7 +39,8 @@ defmodule Jabberwocky.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:ecto_enum, "~> 1.0"}
+      {:ecto_enum, "~> 1.0"},
+      {:faker, "~> 0.9"}
     ]
   end
 
