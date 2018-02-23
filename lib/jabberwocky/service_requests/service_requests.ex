@@ -64,7 +64,7 @@ defmodule Jabberwocky.ServiceRequests do
 
 	## Examples
 		iex> delete(service)
-		{:ok, %Service{}}
+		{:ok, %ServiceRequest{}}
 
 		iex> delete(service)
 		{:error, %Ecto.Changeset{}}
