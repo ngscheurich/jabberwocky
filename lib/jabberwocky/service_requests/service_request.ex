@@ -1,4 +1,4 @@
-defmodule Jabberwocky.ServiceRequest do
+defmodule Jabberwocky.ServiceRequests.ServiceRequest do
   @defmodule """
   Represents a service request filed with the city, along with 
   some additional data we need for tracking progress and sending
