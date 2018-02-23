@@ -50,7 +50,7 @@ defmodule Jabberwocky.Users do
 
 	## Examples
 
-		iex> get(123)
+		iex> get!(123)
 		%User{}
 
 		iex> get!(456)
@@ -58,6 +58,22 @@ defmodule Jabberwocky.Users do
 
 	"""
 	def get!(id), do: Repo.get!(User, id)
+
+	@doc """
+	Gets a single user by `attrs`.
+
+	Returns nil if the user does not exist.
+
+	## Examples
+
+		iex> get_by!(%{phone_number: "+12251234567"})
+		%User{}
+
+		iex> get_by!(%{phone_number: "+12252345678"})
+		nil
+
+	"""
+	def get_by!(attrs), do: Repo.get_by(User, attrs)
 
 	@doc """
 	Deletes a user.
