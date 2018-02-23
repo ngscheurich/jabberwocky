@@ -1,5 +1,5 @@
 defmodule Jabberwocky.ServiceRequests.ServiceRequest do
-  @defmodule """
+  @moduledoc """
   Represents a service request filed with the city, along with 
   some additional data we need for tracking progress and sending
   status updates.
@@ -10,7 +10,7 @@ defmodule Jabberwocky.ServiceRequests.ServiceRequest do
   import Ecto.Changeset
 
   alias __MODULE__
-  alias JabberwockyWeb.User
+  alias Jabberwocky.User
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id

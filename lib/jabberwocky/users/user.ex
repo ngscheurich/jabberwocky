@@ -1,5 +1,5 @@
 defmodule Jabberwocky.Users.User do
-  @defmodule """
+  @moduledoc """
   Represents a person who has interacted with the jabberwocky.
   """
 
