@@ -40,5 +40,11 @@ defmodule Jabberwocky.ServiceRequestsTest do
 
       assert service_request == ServiceRequests.get!(service_request.id)
     end
+
+    test "delete/1 deletes the service request" do
+      service_request = service_request_fixture()
+      assert {:ok, %ServiceRequest{}} = ServiceRequests.delete(service_request)
+      assert_raise Ecto.NoResultsError, fn -> ServiceRequests.get!(service_request.id) end
+    end
   end
 end

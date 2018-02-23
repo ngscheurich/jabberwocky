@@ -30,10 +30,10 @@ defmodule Jabberwocky.ServiceRequests do
 
 	## Examples
 
-		iex> update_service(service, %{field: new_value})
+		iex> update(service, %{field: new_value})
 		{:ok, %Service{}}
 
-		iex> update_service(service, %{field: bad_value})
+		iex> update(service, %{field: bad_value})
 		{:error, %Ecto.Changeset{}}
 
 	"""
@@ -58,4 +58,19 @@ defmodule Jabberwocky.ServiceRequests do
 
 	"""
 	def get!(id), do: Repo.get!(ServiceRequest, id)
+
+	@doc """
+	Deletes a service request.
+
+	## Examples
+		iex> delete(service)
+		{:ok, %Service{}}
+
+		iex> delete(service)
+		{:error, %Ecto.Changeset{}}
+
+	"""
+	def delete(%ServiceRequest{} = service_request) do
+		Repo.delete(service_request)
+	end
 end
