@@ -8,6 +8,7 @@ defmodule Jabberwocky.User do
   import Ecto.Changeset
 
   alias __MODULE__
+  alias JabberwockyWeb.ServiceRequest
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
@@ -15,6 +16,8 @@ defmodule Jabberwocky.User do
   schema "users" do
     field :twilio_id, :string
     field :phone_number, :string
+
+    has_many :service_requests, ServiceRequest
 
     timestamps()
   end

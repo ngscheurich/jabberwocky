@@ -10,6 +10,7 @@ defmodule Jabberwocky.ServiceRequest do
   import Ecto.Changeset
 
   alias __MODULE__
+  alias JabberwockyWeb.User
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
@@ -21,6 +22,8 @@ defmodule Jabberwocky.ServiceRequest do
     field :image_url, :string
     field :service_request_id, :string
     field :status, ServiceRequestStatusEnum
+    
+    belongs_to :user, User
 
     timestamps()
   end
@@ -28,6 +31,14 @@ defmodule Jabberwocky.ServiceRequest do
   @doc false
   def changeset(%ServiceRequest{} = service_request, attrs) do
     service_request
-    |> cast(attrs, [:address, :type, :notify, :image_url, :service_request_id, :status])
+    |> cast(attrs, [
+      :address, 
+      :type,
+      :notify,
+      :image_url,
+      :service_request_id,
+      :status,
+      :user_id
+    ])
   end
 end
