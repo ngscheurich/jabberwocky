@@ -1,4 +1,4 @@
-defmodule Jabberwocky.ServiceRequest do
+defmodule Jabberwocky.User do
   @defmodule """
   Represents a person who has interacted with the jabberwocky.
   """
@@ -20,8 +20,8 @@ defmodule Jabberwocky.ServiceRequest do
   end
 
   @doc false
-  def changeset(%ServiceRequest{} = service_request, attrs) do
-    service_request
+  def changeset(%User{} = user , attrs) do
+    user
     |> cast(attrs, [:twilio_id, :phone_number])
   end
 end
