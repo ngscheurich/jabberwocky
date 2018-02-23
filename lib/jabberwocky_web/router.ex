@@ -5,7 +5,9 @@ defmodule JabberwockyWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", JabberwockyWeb do
+  scope "/", JabberwockyWeb do
     pipe_through :api
+
+    resources "/service_requests", ServiceRequestController, only: [:create, :show]
   end
 end
