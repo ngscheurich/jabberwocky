@@ -86,7 +86,7 @@ defmodule JabberwockyWeb.ServiceRequestController do
   @spec send_service_request_email(%ServiceRequest{}) :: no_return()
   defp send_service_request_email(service_request) do
     service_request
-    |> Email.service_request()
+    |> Email.service_request_email()
     |> Mailer.deliver_later()
   end
 end
