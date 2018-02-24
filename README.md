@@ -6,7 +6,7 @@ Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to rep
 
 ## To-Do
 
-- [ ] Include images or (image URLs) in service request email
+- [ ] Include images (or image URLs) in service request email
 - [ ] Create escalation emails based on service request age
 
 ## Contributing
