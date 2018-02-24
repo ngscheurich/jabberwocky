@@ -6,8 +6,8 @@ defmodule Jabberwocky.Email do
   @spec service_request_email(%ServiceRequest{}) :: no_return()
   def service_request_email(service_request) do
     new_email(
-      to: "nick@scheurich.me",
-      from: "mail@jabberwockyapp.com",
+      to: "jabberwockyapp@gmail.com",
+      from: "notifications@jabberwockyapp.com",
       subject: "Blight reported at #{service_request.address}",
       html_body: """
       <p>A citizen has reported the following:</p>
