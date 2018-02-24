@@ -11,7 +11,7 @@ Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to rep
 
 ## Contributing
 
-We made this in a day, and we need your help! PRs welcome—just be sure you adhere to the code of conduct.
+We made this in a day, and we need your help! PRs welcome—just be sure you adhere to the [code of conduct](https://github.com/ngscheurich/jabberwocky/blob/master/CODE_OF_CONDUCT.md).
 
 ### Development
 
