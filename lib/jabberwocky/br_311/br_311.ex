@@ -23,6 +23,7 @@ defmodule Jabberwocky.BR311 do
 		{:error, %Ecto.Changeset{}}
 
 	"""
+	@spec create_service_request(attrs :: map) :: {:ok, %ServiceRequest{}} | {:error, Ecto.Changeset.t()}
 	def create_service_request(attrs \\ %{}) do
 		%ServiceRequest{}
 		|> ServiceRequest.changeset(attrs)
@@ -41,6 +42,7 @@ defmodule Jabberwocky.BR311 do
 		{:error, %Ecto.Changeset{}}
 
 	"""
+	@spec update_service_request(%ServiceRequest{}, attrs :: map()) :: {:ok, %ServiceRequest{}} | {:error, Ecto.Changeset.t()}
 	def update_service_request(%ServiceRequest{} = service_request, attrs) do
 		service_request
 		|> ServiceRequest.changeset(attrs)
@@ -61,6 +63,7 @@ defmodule Jabberwocky.BR311 do
 		** (Ecto.NoResultsError)
 
 	"""
+	@spec get_service_request!(id :: integer()) :: %ServiceRequest{} | no_return()
 	def get_service_request!(id), do: Repo.get!(ServiceRequest, id)
 
 	@doc """
@@ -74,6 +77,7 @@ defmodule Jabberwocky.BR311 do
 		{:error, %Ecto.Changeset{}}
 
 	"""
+	@spec delete_service_request(%ServiceRequest{}) :: {:ok, %ServiceRequest{}} | {:error, Ecto.Changeset.t()}
 	def delete_service_request(%ServiceRequest{} = service_request) do
 		Repo.delete(service_request)
 	end
@@ -92,6 +96,7 @@ defmodule Jabberwocky.BR311 do
 		{:error, %Ecto.Changeset{}}
 
 	"""
+	@spec create_user(attrs :: map) :: {:ok, Ecto.Schema.t()} | {:error, Ecto.Changeset.t()}
 	def create_user(attrs \\ %{}) do
 		%User{}
 		|> User.changeset(attrs)
@@ -110,6 +115,7 @@ defmodule Jabberwocky.BR311 do
 		{:error, %Ecto.Changeset{}}
 
 	"""
+	@spec update_user(%User{}, attrs :: map) :: {:ok, Ecto.Schema.t()} | {:error, Ecto.Changeset.t()}
 	def update_user(%User{} = user, attrs) do
 		user
 		|> User.changeset(attrs)
@@ -130,10 +136,10 @@ defmodule Jabberwocky.BR311 do
 		** (Ecto.NoResultsError)
 
 	"""
+	@spec get_user!(id :: integer()) :: %User{} | no_return()
 	def get_user!(id), do: Repo.get!(User, id)
 
 	@doc """
-	
 	Gets a single user by `attrs`.
 
 	Returns nil if the user does not exist.
@@ -147,6 +153,7 @@ defmodule Jabberwocky.BR311 do
 		nil
 
 	"""
+	@spec get_user_by(attrs :: map()) :: %User{} | nil
 	def get_user_by(attrs), do: Repo.get_by(User, attrs)
 
 	@doc """
@@ -160,6 +167,7 @@ defmodule Jabberwocky.BR311 do
 		{:error, %Ecto.Changeset{}}
 
 	"""
+	@spec delete_user(%User{}) :: {:ok, %ServiceRequest{}} | {:error, Ecto.Changeset.t()}
 	def delete_user(%User{} = user) do
 		Repo.delete(user)
 	end
