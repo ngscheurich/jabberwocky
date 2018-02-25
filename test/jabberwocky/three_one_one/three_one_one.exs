@@ -1,10 +1,10 @@
-defmodule Jabberwocky.ServiceRequestsTest do
+defmodule Jabberwocky.ThreeOneOneTest do
   use Jabberwocky.DataCase
 
-  alias Jabberwocky.ServiceRequests
+  alias Jabberwocky.ThreeOneOne
 
   describe "service_requests" do
-    alias Jabberwocky.ServiceRequests.ServiceRequest
+    alias Jabberwocky.ThreeOneOne.ServiceRequest
 
     @valid_attrs %{status: "open"}
     @update_attrs %{status: "closed"}

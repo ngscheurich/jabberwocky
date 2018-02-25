@@ -1,8 +1,8 @@
-defmodule Jabberwocky.ServiceRequests.ServiceRequest do
+defmodule Jabberwocky.ThreeOneOne.ServiceRequest do
   @moduledoc """
   Represents a service request filed with the city, along with 
   some additional data we need for tracking progress and sending
-  status updates.
+  status updates to users.
   """
 
   use Ecto.Schema

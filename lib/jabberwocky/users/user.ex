@@ -8,7 +8,7 @@ defmodule Jabberwocky.Users.User do
   import Ecto.Changeset
 
   alias __MODULE__
-  alias Jabberwocky.ServiceRequests.ServiceRequest
+  alias Jabberwocky.ThreeOneOne.ServiceRequest
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
