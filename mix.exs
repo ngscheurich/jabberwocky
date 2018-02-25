@@ -13,7 +13,7 @@ defmodule Jabberwocky.Mixfile do
       deps: deps(),
       dialyzer: [plt_add_deps: :transitive],
       test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [coveralls: :test]
+      preferred_cli_env: [coveralls: :test, "coveralls.travis": :test]
     ]
   end
 
