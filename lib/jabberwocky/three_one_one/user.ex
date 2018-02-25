@@ -1,6 +1,7 @@
-defmodule Jabberwocky.Users.User do
+defmodule Jabberwocky.ThreeOneOne.User do
   @moduledoc """
-  Represents a person who has interacted with the jabberwocky.
+  Represents an individual on whose behalf the Jabberwocky has
+  interfaced with Baton Rouge’s 311 system.
   """
 
   use Ecto.Schema
@@ -28,4 +29,3 @@ defmodule Jabberwocky.Users.User do
     |> cast(attrs, [:twilio_id, :phone_number])
   end
 end
-

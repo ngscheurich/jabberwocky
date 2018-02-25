@@ -6,9 +6,10 @@ defmodule Jabberwocky.ThreeOneOne do
 	"""
 
 	import Ecto.Query, warn: false
+	alias Jabberwocky.ThreeOneOne
 	alias Jabberwocky.Repo
 
-	alias Jabberwocky.ThreeOneOne.ServiceRequest
+	alias ThreeOneOne.ServiceRequest
 
 	@doc """
 	Creates a service request.
@@ -40,7 +41,7 @@ defmodule Jabberwocky.ThreeOneOne do
 		{:error, %Ecto.Changeset{}}
 
 	"""
-	def update(%ServiceRequest{} = service_request, attrs) do
+	def update_service_request(%ServiceRequest{} = service_request, attrs) do
 		service_request
 		|> ServiceRequest.changeset(attrs)
 		|> Repo.update()
@@ -75,5 +76,92 @@ defmodule Jabberwocky.ThreeOneOne do
 	"""
 	def delete_service_request(%ServiceRequest{} = service_request) do
 		Repo.delete(service_request)
+	end
+
+	alias ThreeOneOne.User
+
+	@doc """
+	Creates a user.
+
+	## Examples
+
+		iex> create_user(%{field: value})
+		{:ok, %User{}}
+
+		iex> create_user(%{field: bad_value})
+		{:error, %Ecto.Changeset{}}
+
+	"""
+	def create_user(attrs \\ %{}) do
+		%User{}
+		|> User.changeset(attrs)
+		|> Repo.insert()
+	end
+
+	@doc """
+	Updates a user.
+
+	## Examples
+
+		iex> update(service, %{field: new_value})
+		{:ok, %Service{}}
+
+		iex> update(service, %{field: bad_value})
+		{:error, %Ecto.Changeset{}}
+
+	"""
+	def update_user(%User{} = user, attrs) do
+		user
+		|> User.changeset(attrs)
+		|> Repo.update()
+	end
+
+	@doc """
+	Gets a single user.
+
+	Raises `Ecto.NoResultsError` if the user does not exist.
+
+	## Examples
+
+		iex> get_user!(123)
+		%User{}
+
+		iex> get_user!(456)
+		** (Ecto.NoResultsError)
+
+	"""
+	def get_user!(id), do: Repo.get!(User, id)
+
+	@doc """
+	#TODO This should not be a bang function
+	
+	Gets a single user by `attrs`.
+
+	Returns nil if the user does not exist.
+
+	## Examples
+
+		iex> get_user_by!(%{phone_number: "+12251234567"})
+		%User{}
+
+		iex> get_user_by!(%{phone_number: "+12252345678"})
+		nil
+
+	"""
+	def get_user_by!(attrs), do: Repo.get_by(User, attrs)
+
+	@doc """
+	Deletes a user.
+
+	## Examples
+		iex> delete_user(service)
+		{:ok, %Service{}}
+
+		iex> delete_user(service)
+		{:error, %Ecto.Changeset{}}
+
+	"""
+	def delete_user(%User{} = user) do
+		Repo.delete(user)
 	end
 end
