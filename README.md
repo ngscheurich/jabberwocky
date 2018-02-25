@@ -1,5 +1,11 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ngscheurich/jabberwocky/master/nameplate.jpg" alt="Jabberwocky fights the blight">
+  <a href="https://travis-ci.org/ngscheurich/jabberwocky">
+    <img src="https://img.shields.io/travis/ngscheurich/jabberwocky/master.svg?style=flat-square" alt="Build status">
+  </a>
+  <a href="https://coveralls.io/github/ngscheurich/jabberwocky">
+    <img src="https://img.shields.io/coveralls/github/ngscheurich/jabberwocky.svg?style=flat-square" alt="Coverage status">
+  </a>
 </p>
 <p align="center">
   An enigmatic creature that devours blight
