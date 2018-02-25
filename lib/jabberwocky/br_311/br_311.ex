@@ -133,7 +133,6 @@ defmodule Jabberwocky.BR311 do
 	def get_user!(id), do: Repo.get!(User, id)
 
 	@doc """
-	#TODO This should not be a bang function
 	
 	Gets a single user by `attrs`.
 
@@ -141,14 +140,14 @@ defmodule Jabberwocky.BR311 do
 
 	## Examples
 
-		iex> get_user_by!(%{phone_number: "+12251234567"})
+		iex> get_user_by(%{phone_number: "+12251234567"})
 		%User{}
 
-		iex> get_user_by!(%{phone_number: "+12252345678"})
+		iex> get_user_by(%{phone_number: "+12252345678"})
 		nil
 
 	"""
-	def get_user_by!(attrs), do: Repo.get_by(User, attrs)
+	def get_user_by(attrs), do: Repo.get_by(User, attrs)
 
 	@doc """
 	Deletes a user.
