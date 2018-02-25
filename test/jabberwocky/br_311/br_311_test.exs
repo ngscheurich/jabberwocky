@@ -71,6 +71,16 @@ defmodule Jabberwocky.BR311Test do
       assert %User{} = user
     end
 
+    test "get_user_by/1 returns a matching user when one exists" do
+      user = user_fixture(%{phone_number: "+12251234567"})
+      assert BR311.get_user_by(%{phone_number: "+12251234567"}) == user
+    end
+
+    test "get_user_by/1 returns `nil` when none exists" do
+      user_fixture(%{phone_number: "+12251234567"})
+      assert BR311.get_user_by(%{phone_number: "+12252345678"}) |> is_nil()
+    end
+
     test "delete_user/1 deletes the user" do
       user = user_fixture()
       assert {:ok, %User{}} = BR311.delete_user(user)
