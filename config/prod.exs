@@ -26,11 +26,6 @@ config :jabberwocky, Jabberwocky.Repo,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true
 
-config :jabberwocky, Jabberwocky.Email.Mailer,
-  adapter: Bamboo.MailgunAdapter,
-  api_key: System.get_env("MAILGUN_API_KEY"),
-  domain: System.get_env("MAILGUN_DOMAIN")
-
 # Do not print debug messages in production
 config :logger, level: :info
 
