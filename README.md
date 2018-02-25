@@ -4,10 +4,10 @@
 
 Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to report instances of blight.
 
-## To-Do
+## Roadmap
 
-- [ ] Include images (or image URLs) in service request email
 - [ ] Create escalation emails based on service request age
+- [ ] Include images (or image URLs) in service request email
 
 ## Contributing
 
