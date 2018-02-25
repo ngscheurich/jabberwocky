@@ -1,7 +1,7 @@
-alias Jabberwocky.ServiceRequests
-alias Jabberwocky.ServiceRequests.ServiceRequest
-alias Jabberwocky.Users
-alias Jabberwocky.Users.User
-alias Jabberwocky.Mailer
-alias Jabberwocky.Email
+alias Jabberwocky.BR311
+alias BR311.ServiceRequest
+alias BR311.User
+
+alias Jabberwocky.Email.{Email, Mailer}
+
 alias Jabberwocky.Repo
