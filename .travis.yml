@@ -3,3 +3,5 @@ elixir:
   - 1.6.0
 otp_release:
   - 20.0 
+script:
+  - "MIX_ENV=test mix do deps.get, test && mix compile && mix coveralls.travis"
