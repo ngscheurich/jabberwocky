@@ -4,7 +4,6 @@ defmodule JabberwockyWeb.ServiceRequestController do
   alias Jabberwocky.BR311
   alias BR311.{ServiceRequest, User}
   alias Jabberwocky.Email
-  alias Email.Mailer
 
   @email_client Application.get_env(:jabberwocky, :email_client)
 
