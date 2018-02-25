@@ -7,6 +7,7 @@ Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to rep
 ## Roadmap
 
 - [x] Refine contexts
+- [ ] Translate `:service_request` enums to 311 blight descriptions in emails
 - [ ] Add [Dialyxir](https://github.com/jeremyjh/dialyxir)
 - [ ] Improve code coverage
 - [ ] Implement CI to test builds
