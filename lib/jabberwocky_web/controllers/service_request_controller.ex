@@ -1,12 +1,14 @@
 defmodule JabberwockyWeb.ServiceRequestController do
   use JabberwockyWeb, :controller
 
-  alias Jabberwocky.ServiceRequests
-  alias Jabberwocky.BR311.{ServiceRequest, User}
-  alias Jabberwocky.Mailer
+  alias Jabberwocky.BR311
+  alias BR311.{ServiceRequest, User}
   alias Jabberwocky.Email
+  alias Email.Mailer
 
-  action_fallback TestJabberwockyWeb.FallbackController
+  @email_client Application.get_env(:jabberwocky, :email_client)
+
+  action_fallback JabberwockyWeb.FallbackController
 
   def create(conn, %{
     "phone_number" => phone_number,
@@ -24,7 +26,7 @@ defmodule JabberwockyWeb.ServiceRequestController do
       user_id: user.id
     }
 
-    with {:ok, %ServiceRequest{} = service_request} <- ServiceRequests.create(attrs) do
+    with {:ok, %ServiceRequest{} = service_request} <- BR311.create_service_request(attrs) do
       send_service_request_email(service_request) 
 
       conn
@@ -34,14 +36,20 @@ defmodule JabberwockyWeb.ServiceRequestController do
     end
   end
 
+  def create(conn, _params) do
+    conn
+    |> put_status(:unprocessable_entity)
+    |> text("Unprocessable entity")
+  end
+
   @doc false
   @spec maybe_create_user(String.t) :: %User{}
   defp maybe_create_user(phone_number) do
-    case Users.get_by!(%{phone_number: phone_number}) do
+    case BR311.get_user_by(%{phone_number: phone_number}) do
       %User{} = user ->
         user
       nil ->
-        {:ok, user} = Users.create(%{phone_number: phone_number})
+        {:ok, user} = BR311.create_user(%{phone_number: phone_number})
         user
     end
   end
@@ -85,6 +93,6 @@ defmodule JabberwockyWeb.ServiceRequestController do
   defp send_service_request_email(service_request) do
     service_request
     |> Email.service_request_email()
-    |> Mailer.deliver_later()
+    |> @email_client.deliver_later()
   end
 end
