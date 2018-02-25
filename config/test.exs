@@ -17,3 +17,6 @@ config :jabberwocky, Jabberwocky.Repo,
   database: "jabberwocky_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Configure email client
+config :jabberwocky, :email_client, Jabberwocky.Email.InMemoryMailer
