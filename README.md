@@ -4,14 +4,27 @@
 
 Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to report instances of blight.
 
-## To-Do
+## Roadmap
 
-- [ ] Include images or (image URLs) in service request email
+- [ ] Refine contexts
+- [ ] Add [Dialyxir](https://github.com/jeremyjh/dialyxir)
+- [ ] Improve code coverage
+- [ ] Implement CI to test builds
+- [ ] Basic GraphQL web API
+- [ ] (Re)design [website](https://github.com/ngscheurich/jabberwocky-site)
+  - [ ] Branding
+  - [ ] Blight map
+  - [ ] Blight stats
+  - [ ] Service request status check
 - [ ] Create escalation emails based on service request age
+- [ ] Include images (or image URLs) in service request email
 
 ## Contributing
 
-We made this in a day, and we need your help! PRs welcome—just be sure you adhere to the code of conduct.
+Rome wasn’t built in a day, but Jabberwocky was. This project came into being on Friday, February 23, 2018
+and was built for the [Activate](http://www.activateconf.com/) 2018 hackathon. We’re working hard to
+improve upon our initial vision, but we’d love your help! PRs are welcome—just be sure you adhere to the
+[code of conduct](https://github.com/ngscheurich/jabberwocky/blob/master/CODE_OF_CONDUCT.md).
 
 ### Development
 
