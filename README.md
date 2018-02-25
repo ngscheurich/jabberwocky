@@ -22,7 +22,7 @@ to ensure that there reports are handled in a timely fashion.
 
 - [x] Refine contexts
 - [ ] Translate `:service_request` enums to 311 blight descriptions in emails
-- [x] Add [Dialyxir](https://github.com/jeremyjh/dialyxir) and typespecs
+- [ ] Add [Dialyxir](https://github.com/jeremyjh/dialyxir) and typespecs
 - [x] Improve code coverage
 - [x] Implement CI to test builds
 - [ ] Basic GraphQL web API
