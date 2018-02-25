@@ -11,7 +11,9 @@ defmodule Jabberwocky.Mixfile do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
-      dialyzer: [plt_add_deps: :transitive]
+      dialyzer: [plt_add_deps: :transitive],
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [coveralls: :test]
     ]
   end
 
@@ -43,7 +45,8 @@ defmodule Jabberwocky.Mixfile do
       {:ecto_enum, "~> 1.0"},
       {:faker, "~> 0.9"},
       {:bamboo, "~> 0.8"},
-      {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
+      {:excoveralls, "~> 0.8", only: :test}
     ]
   end
 
