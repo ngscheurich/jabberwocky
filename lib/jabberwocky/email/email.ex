@@ -1,4 +1,4 @@
-defmodule Jabberwocky.Email.Email do
+defmodule Jabberwocky.Email do
   import Bamboo.Email
 
   alias Jabberwocky.BR311.ServiceRequest
