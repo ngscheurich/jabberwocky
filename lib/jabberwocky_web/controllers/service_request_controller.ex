@@ -54,7 +54,7 @@ defmodule JabberwockyWeb.ServiceRequestController do
   end
 
   @doc false
-  @spec translate_notify(String.t) :: boolean
+  @spec translate_type(String.t) :: boolean
   defp translate_type(input) do
     types = %{
       "1" => :tall_grass,
