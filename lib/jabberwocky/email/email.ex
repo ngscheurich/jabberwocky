@@ -6,20 +6,11 @@ defmodule Jabberwocky.Email do
   @spec service_request_email(%ServiceRequest{}) :: no_return()
   def service_request_email(service_request) do
     new_email(
-      to: "jabberwockyapp@gmail.com",
+      to: "ngscheurich+jabberwocky@gmail.com",
       from: "notifications@jabberwockyapp.com",
       subject: "Blight reported at #{service_request.address}",
-      html_body: """
-      <p>A citizen has reported the following:</p>
-      <ul>
-        <li><b>Address:</b> #{service_request.address}</li>
-        <li><b>Blight type: #{service_request.type}</li>
-        <li><b>Image: #{service_request.image_url}</li>
-      </ul>
-      """,
-      text_body: """
-      Blight reported at #{service_request.address} (#{service_request.type})
-      """
+      html_body: "Blight reported at #{service_request.address}",
+      text_body: "Blight reported at #{service_request.address}"
     )
   end
 end
