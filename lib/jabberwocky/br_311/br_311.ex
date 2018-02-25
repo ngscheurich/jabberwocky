@@ -1,15 +1,15 @@
-defmodule Jabberwocky.ThreeOneOne do
+defmodule Jabberwocky.BR311 do
 	@moduledoc """
-	This is the boundary for the ThreeOneOne module. This module is
-	responsible for handling all things related to interfacing with
-	Baton Rouge’s 311 system.
+	This is the boundary for the BR311 module. This module is
+	responsible for handling all things related to interfacing
+	with Baton Rouge’s 311 system.
 	"""
 
 	import Ecto.Query, warn: false
-	alias Jabberwocky.ThreeOneOne
+	alias Jabberwocky.BR311
 	alias Jabberwocky.Repo
 
-	alias ThreeOneOne.ServiceRequest
+	alias BR311.ServiceRequest
 
 	@doc """
 	Creates a service request.
@@ -78,7 +78,7 @@ defmodule Jabberwocky.ThreeOneOne do
 		Repo.delete(service_request)
 	end
 
-	alias ThreeOneOne.User
+	alias BR311.User
 
 	@doc """
 	Creates a user.

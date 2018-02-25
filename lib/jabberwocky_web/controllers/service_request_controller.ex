@@ -2,7 +2,7 @@ defmodule JabberwockyWeb.ServiceRequestController do
   use JabberwockyWeb, :controller
 
   alias Jabberwocky.ServiceRequests
-  alias Jabberwocky.ThreeOneOne.{ServiceRequest, User}
+  alias Jabberwocky.BR311.{ServiceRequest, User}
   alias Jabberwocky.Mailer
   alias Jabberwocky.Email
 

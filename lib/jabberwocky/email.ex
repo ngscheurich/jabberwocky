@@ -1,7 +1,7 @@
 defmodule Jabberwocky.Email do
   import Bamboo.Email
 
-  alias Jabberwocky.ThreeOneOne.ServiceRequest
+  alias Jabberwocky.BR311.ServiceRequest
 
   @spec service_request_email(%ServiceRequest{}) :: no_return()
   def service_request_email(service_request) do

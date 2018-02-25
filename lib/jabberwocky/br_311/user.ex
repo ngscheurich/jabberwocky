@@ -1,4 +1,4 @@
-defmodule Jabberwocky.ThreeOneOne.User do
+defmodule Jabberwocky.BR311.User do
   @moduledoc """
   Represents an individual on whose behalf the Jabberwocky has
   interfaced with Baton Rouge’s 311 system.
@@ -9,7 +9,7 @@ defmodule Jabberwocky.ThreeOneOne.User do
   import Ecto.Changeset
 
   alias __MODULE__
-  alias Jabberwocky.ThreeOneOne.ServiceRequest
+  alias Jabberwocky.BR311.ServiceRequest
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
