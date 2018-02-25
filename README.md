@@ -1,5 +1,11 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ngscheurich/jabberwocky/master/nameplate.jpg" alt="Jabberwocky fights the blight">
+  <a href="https://travis-ci.org/ngscheurich/jabberwocky">
+    <img src="https://img.shields.io/travis/ngscheurich/jabberwocky/master.svg?style=flat-square" alt="Build status">
+  </a>
+  <a href="https://coveralls.io/github/ngscheurich/jabberwocky">
+    <img src="https://img.shields.io/coveralls/github/ngscheurich/jabberwocky.svg?style=flat-square" alt="Coverage status">
+  </a>
 </p>
 <p align="center">
   An enigmatic creature that devours blight
@@ -17,8 +23,8 @@ to ensure that there reports are handled in a timely fashion.
 - [x] Refine contexts
 - [ ] Translate `:service_request` enums to 311 blight descriptions in emails
 - [ ] Add [Dialyxir](https://github.com/jeremyjh/dialyxir) and typespecs
-- [x] Improve code coverage
-- [ ] Implement CI to test builds
+- [ ] Improve code coverage
+- [x] Implement CI to test builds
 - [ ] Basic GraphQL web API
 - [ ] (Re)design [website](https://github.com/ngscheurich/jabberwocky-site)
   - [ ] Branding
@@ -31,10 +37,10 @@ to ensure that there reports are handled in a timely fashion.
 
 ## Contributing
 
-Rome wasn’t built in a day, but Jabberwocky was. This project came into being on Friday, February 23, 2018
-and was built for the [Activate](http://www.activateconf.com/) 2018 hackathon. We’re working hard to
-improve upon our initial vision, but we’d love your help! PRs are welcome—just be sure you adhere to the
-[code of conduct](https://github.com/ngscheurich/jabberwocky/blob/master/CODE_OF_CONDUCT.md).
+Rome wasn’t built in a day, but Jabberwocky sort of was. This project initially launched after
+a day of coding at the [Activate](http://www.activateconf.com/) 2018 hackathon. We’re working hard
+to improve upon our initial vision, but we’d love your help! PRs are welcome—just be sure you
+adhere to the [code of conduct](https://github.com/ngscheurich/jabberwocky/blob/master/CODE_OF_CONDUCT.md).
 
 ### Development
 
