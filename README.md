@@ -37,10 +37,10 @@ to ensure that there reports are handled in a timely fashion.
 
 ## Contributing
 
-Rome wasn’t built in a day, but Jabberwocky sort of was. This project initially launched on Friday,
-February 23, 2018 after a day at the [Activate](http://www.activateconf.com/) 2018 hackathon. We’re
-working hard to improve upon our initial vision, but we’d love your help! PRs are welcome—just be
-sure you adhere to the [code of conduct](https://github.com/ngscheurich/jabberwocky/blob/master/CODE_OF_CONDUCT.md).
+Rome wasn’t built in a day, but Jabberwocky sort of was. This project initially launched after
+a day of coding at the [Activate](http://www.activateconf.com/) 2018 hackathon. We’re working hard
+to improve upon our initial vision, but we’d love your help! PRs are welcome—just be sure you
+adhere to the [code of conduct](https://github.com/ngscheurich/jabberwocky/blob/master/CODE_OF_CONDUCT.md).
 
 ### Development
 
