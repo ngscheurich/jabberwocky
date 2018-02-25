@@ -1,3 +1,7 @@
+<p textalign="center">
+  <img src="https://raw.githubusercontent.com/ngscheurich/jabberwocky/master/jabberwocky.jpg" alt="The Jabberwocky!">
+</p>
+
 # Jabberwocky
 
 > Text BLIGHT to (225) 240-4652 or the Jabberwocky will devour you!
