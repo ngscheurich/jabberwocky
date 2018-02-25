@@ -1,12 +1,16 @@
-<p textalign="center">
-  <img src="https://raw.githubusercontent.com/ngscheurich/jabberwocky/master/jabberwocky.jpg" alt="The Jabberwocky!">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ngscheurich/jabberwocky/master/nameplate.jpg" alt="Jabberwocky fights the blight">
+</p>
+<p align="center">
+  An enigmatic creature that devours blight
 </p>
 
-# Jabberwocky
+---
 
-> Text BLIGHT to (225) 240-4652 or the Jabberwocky will devour you!
+## Description
 
-Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to report instances of blight.
+Jabberwocky is an SMS-based app that empowers Baton Rouge citizens to report instances of blight and tries
+to ensure that there reports are handled in a timely fashion.
 
 ## Roadmap
 
