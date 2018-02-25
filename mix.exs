@@ -41,7 +41,8 @@ defmodule Jabberwocky.Mixfile do
       {:cowboy, "~> 1.0"},
       {:ecto_enum, "~> 1.0"},
       {:faker, "~> 0.9"},
-      {:bamboo, "~> 0.8"}
+      {:bamboo, "~> 0.8"},
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
     ]
   end
 
