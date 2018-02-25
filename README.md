@@ -5,8 +5,12 @@
   An enigmatic creature that devours blight
 </p>
 
+---
 
-Jabberwocky is an SMS-based app that aims to empower Baton Rouge citizens to report instances of blight.
+## Description
+
+Jabberwocky is an SMS-based app that empowers Baton Rouge citizens to report instances of blight and tries
+to ensure that there reports are handled in a timely fashion.
 
 ## Roadmap
 
