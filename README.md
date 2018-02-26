@@ -33,6 +33,7 @@ to ensure that there reports are handled in a timely fashion.
   - [ ] Service request status check
 - [ ] Create escalation emails based on service request age
 - [ ] Include images (or image URLs) in service request email
+- [ ] Create email templates
 - [ ] Move this all to a Trello board
 
 ## Contributing
